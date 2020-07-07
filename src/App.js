@@ -5,18 +5,17 @@ import "./App.css";
 function App() {
   const [toDos, updateToDos] = useState([
     {
-      content: 'Work on React Hooks',
+      content: "Work on React Hooks",
       isCompleted: false,
     },
     {
-      content: 'complete MakeSwift code challenge',
+      content: "complete MakeSwift code challenge",
       isCompleted: false,
-    
-    }
+    },
     {
-      content: 'apply for another job',
+      content: "apply for another job",
       isCompleted: false,
-    }
+    },
   ]);
   return (
     <div className="app">
@@ -25,10 +24,12 @@ function App() {
       </div>
       <form className="toDo-list">
         <ul>
-          <div className="todo">
-            <div className="checkbox" />
-            <input type="text" value="first item on the list" />
-          </div>
+          {toDos.map((toDo, i) => (
+            <div className="todo">
+              <div className="checkbox" />
+              <input type="text" value={toDos.content} />
+            </div>
+          ))}
         </ul>
       </form>
     </div>
