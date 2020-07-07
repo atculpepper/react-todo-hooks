@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It was built as a learning tutorial to help this programmer better understand functional components within React.
 
 ## Available Scripts
 
