@@ -3,6 +3,21 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const [toDos, updateToDos] = useState([
+    {
+      content: 'Work on React Hooks',
+      isCompleted: false,
+    },
+    {
+      content: 'complete MakeSwift code challenge',
+      isCompleted: false,
+    
+    }
+    {
+      content: 'apply for another job',
+      isCompleted: false,
+    }
+  ]);
   return (
     <div className="app">
       <div className="header">
